@@ -1,0 +1,63 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @heny12
+ Watch 1,936
+  Star 45,899
+ Fork 18,929 github/gitignore
+ Code  Pull requests 111  Projects 0  Pulse  Graphs
+Branch: master Find file Copy pathgitignore/Rails.gitignore
+cedd263  on Aug 8, 2016
+@sdhull sdhull Remove config/secrets.yml
+31 contributors @arcresu @sidewinder94 @shawndavenport @maxehmookau @jeffrydegrande @defunkt @grossadamm @zellux @yaroslav @wafiq @tomafro @seenmyfate @renhx @lunks @pisaacs @sdhull @michaelminter @mwitek @martinciu @jgeiger @frankel @fabianhjr @dabit @thedaniel @bry4n @jutaz and others
+RawBlameHistory     
+45 lines (35 sloc)  944 Bytes
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+config/initializers/secret_token.rb
+
+# Only include if you have production secrets in this file, which is no longer a Rails default
+# config/secrets.yml
+
+# dotenv
+# TODO Comment out this rule if environment variables can be committed
+.env
+
+## Environment normalization:
+/.bundle
+/vendor/bundle
+
+# these should all be checked in to normalize the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+# if using bower-rails ignore default bower_components path bower.json files
+/vendor/assets/bower_components
+*.bowerrc
+bower.json
+
+# Ignore pow environment settings
+.powenv
+
+# Ignore Byebug command history file.
+.byebug_history
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
