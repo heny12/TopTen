@@ -1,0 +1,15 @@
+$( document ).ready(function() {
+	
+	// Trigger update of list title when changed
+	$('.list_title').blur(function(){
+		var form = this.form;
+		$(form).submit()
+	})
+
+	// Trigger update of list title when changed
+	$('.item_name').blur(function(){
+		var form = this.form;
+		$(form).submit()
+	})
+
+});
