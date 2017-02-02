@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @heny12
- Watch 1,936
-  Star 45,899
- Fork 18,929 github/gitignore
- Code  Pull requests 111  Projects 0  Pulse  Graphs
-Branch: master Find file Copy pathgitignore/Rails.gitignore
-cedd263  on Aug 8, 2016
-@sdhull sdhull Remove config/secrets.yml
-31 contributors @arcresu @sidewinder94 @shawndavenport @maxehmookau @jeffrydegrande @defunkt @grossadamm @zellux @yaroslav @wafiq @tomafro @seenmyfate @renhx @lunks @pisaacs @sdhull @michaelminter @mwitek @martinciu @jgeiger @frankel @fabianhjr @dabit @thedaniel @bry4n @jutaz and others
-RawBlameHistory     
-45 lines (35 sloc)  944 Bytes
 *.rbc
 capybara-*.html
 .rspec
@@ -60,5 +43,3 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
