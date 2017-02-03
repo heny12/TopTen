@@ -28,6 +28,7 @@ class ListsController < ApplicationController
     @list = List.new(list_params)
     # TODO eventually make edittable
     @list.length = 10
+    @list.user_id = current_user.id
 
     respond_to do |format|
       if @list.save

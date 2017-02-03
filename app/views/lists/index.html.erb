@@ -13,23 +13,7 @@
 
   <tbody>
     <% @lists.each do |list| %>
-      <tr>
-        <%= form_for(list, method: 'put', remote: true, class: 'list_form') do |f| %>
-          <td colspan="3"><%= f.text_field :title, value: list.title, class: 'list_title' %></td>
-          <td>by OWNER</td>
-        <% end %>
-        <td><%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-      <% list.all_items.each_with_index do |item, index| %>
-        <tr>
-          <td>#<%= index + 1 %>: </td>
-          <%= form_for(item, method: 'put', remote: true) do |i| %>
-            <td><%= i.text_field :name, class: 'item_name' %></td>
-            <td><%= i.hidden_field :order, value: index %></td>
-          <% end %>
-        </tr>
-      <% end %>
-
+      <%= render :partial => 'form', :locals => {:list => list } %>
     <% end %>
   </tbody>
 </table>

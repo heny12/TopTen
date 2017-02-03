@@ -1,0 +1,7 @@
+<tr>
+<td>#<%= index + 1 %>: </td>
+	<%= form_for(item, method: 'put', remote: true) do |i| %>
+	  <td><%= i.text_field :name, class: 'item_name' %></td>
+	  <td><%= i.hidden_field :order, value: index %></td>
+	<% end %>
+</tr>
